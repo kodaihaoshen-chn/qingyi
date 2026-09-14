@@ -1,0 +1,28 @@
+name: Windows build
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build-and-test:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build release executable
+        shell: powershell
+        run: .\build.ps1
+
+      - name: Build and run checks
+        shell: powershell
+        run: |
+          .\build.ps1 -IncludeTests
+          .\轻译-测试.exe
+
+      - name: Upload executable
+        uses: actions/upload-artifact@v4
+        with:
+          name: qingyi-windows-x64
+          path: 轻译.exe

@@ -1,0 +1,7 @@
+轻译.exe
+轻译-测试.exe
+*.user
+*.suo
+.vs/
+bin/
+obj/
