@@ -18,7 +18,7 @@
 
 ## 下载
 
-从 [Releases](https://github.com/kodaihaoshen-chn/qingyi/releases/latest) 下载最新版 `轻译.exe`。
+从 [Releases](https://github.com/kodaihaoshen-chn/qingyi/releases/latest) 下载最新版 `QingYi-版本号.exe`。GitHub 会处理中文附件名，因此发布文件统一使用英文名。
 
 系统要求：Windows 10/11 64 位。
 
