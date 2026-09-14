@@ -22,7 +22,7 @@ jobs:
           .\轻译-测试.exe
 
       - name: Upload executable
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: qingyi-windows-x64
           path: 轻译.exe
